@@ -1,15 +1,4 @@
-// Yarn & Knitting Bug Fixing Command Line App
 
-console.log("Welcome to the Yarn & Knitting Bug Fixing App!");
-console.log("Let's help fix the knitting patterns and yarn collection issues.");
-
-// 1. Syntax Error: Missing closing bracket in the function
-function chooseYarn() {
-    const yarns = ["Wool", "Cotton", "Silk", "Acrylic"];
-    console.log("Available Yarns:", yarns.join(", "));
-    return yarns[0];
-    // BUG: Missing closing bracket here
-// }
 
 // 2. Logic Error: Incorrect conditional (using assignment instead of comparison)
 function checkYarnColor(color) {
@@ -64,19 +53,14 @@ function combineYarns(yarn1, yarn2) {
 
 combineYarns(50, "30");  // Mixing number and string
 
-// 8. DRY Code Example: Modular function for repetitive tasks
-function logKnittingStep(step) {
-    console.log(`Knitting Step: ${step}`);
-}
 
-// Using the function to avoid repetition
-function knitScarf() {
-    logKnittingStep("Casting on stitches");
-    logKnittingStep("Knitting the first row");
-    logKnittingStep("Knitting the middle rows");
-    logKnittingStep("Binding off stitches");
-    console.log("Scarf is complete!");
-}
+// 1. Syntax Error: Missing closing bracket in the function
+function chooseYarn() {
+    const yarns = ["Wool", "Cotton", "Silk", "Acrylic"];
+    console.log("Available Yarns:", yarns.join(", "));
+    return yarns[0];
+    // BUG: Missing closing bracket here
+// }
 
 // Call functions to demonstrate bugs and modular code
 chooseYarn();
@@ -86,6 +70,3 @@ chooseNeedleSize();
 countStitches();  // Be cautious with this one, as it's an infinite loop!
 knitRow();
 combineYarns(50, "30");
-
-// Demonstrate DRY principle
-knitScarf();

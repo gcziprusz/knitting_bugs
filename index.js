@@ -1,8 +1,3 @@
-function chooseYarn() {
-    const yarns = ["Wool", "Cotton", "Silk", "Acrylic"];
-    console.log("Available Yarns:", yarns.join(", "));
-    return yarns[0];
-
 function checkYarnColor(color) {
     const favoriteColor = "blue";
     if (color = favoriteColor) {
@@ -52,6 +47,11 @@ function combineYarns(yarn1, yarn2) {
     const combinedLength = yarn1.length + yarn2.length;
     console.log(`Combined yarn length: ${combinedLength}`);  
 }
+
+// function chooseYarn() {
+//     const yarns = ["Wool", "Cotton", "Silk", "Acrylic"];
+//     console.log("Available Yarns:", yarns.join(", "));
+//     return yarns[0];
 
 // chooseYarn();
 // startKnitting("Wool");
